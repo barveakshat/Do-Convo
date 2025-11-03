@@ -9,6 +9,8 @@ import { NextResponse } from "next/server";
 
 const return_url = process.env.NEXT_BASE_URL + "/";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const { userId } = await auth();

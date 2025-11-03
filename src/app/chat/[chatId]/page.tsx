@@ -9,6 +9,8 @@ import { eq } from "drizzle-orm";
 import { redirect } from "next/navigation";
 import React from "react";
 
+export const dynamic = "force-dynamic";
+
 type Props = {
   params: {
     chatId: string;
